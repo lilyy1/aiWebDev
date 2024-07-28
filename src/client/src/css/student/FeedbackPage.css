@@ -1,0 +1,98 @@
+.feedback-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f6f8; /* Update the background color to match the Figma design */
+}
+
+.feedback-content {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.3s;
+  margin-left: 200px;
+}
+
+.sidebar-expanded {
+  margin-left: 200px;
+}
+
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.feedback-header h2{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.feedback-details {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-score {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.feedback-score .score-block {
+  flex-direction: column;
+  background-color: #e0e7ff; /* Update the background color of score blocks */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px;
+ 
+}
+
+.feedback-score .score-block span {
+  font-size: 14px;
+  color: #4b5563; /* Darker text color */
+}
+
+.feedback-score .score-block div {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.feedback-comments {
+  margin-top: 20px;
+}
+
+.feedback-comments h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #1f2937; /* Darker text color */
+  text-align: left;
+}
+
+.feedback-comments textarea {
+  width: 100%;
+  height: 100px; /* Adjust the height as needed */
+  border: 1px solid #d1d5db; /* Light gray border */
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  resize: vertical/* Prevent resizing */
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  height:40px;
+  margin-right:50px;
+  margin-top:400px;
+  
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}

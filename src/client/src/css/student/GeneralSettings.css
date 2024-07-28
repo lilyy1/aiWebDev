@@ -1,0 +1,50 @@
+.general-settings-container {
+    display: flex;
+    height: 100vh;
+    background-color: #E8F1F2;
+}
+  
+.general-settings-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #E8F1F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items to the start */
+}
+  
+.general-settings-content h1 {
+    font-size: 32px;
+    color: #333;
+}
+  
+.settings-item {
+    margin-top: 90px;
+    margin-bottom: -75px;
+    display: flex;
+    align-items: center;
+}
+
+.settings-item label {
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Add gap between checkbox and text */
+}
+
+.send-request-btn {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+  
+.send-request-btn:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}

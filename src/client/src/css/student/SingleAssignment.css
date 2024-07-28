@@ -1,0 +1,131 @@
+.single-assignment-page {
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    padding-top: 150px; /* Add padding to the top if needed */
+    padding-left: 400px; /* Move the content to the right */
+    background-color: transparent; /* Remove background color */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove box shadow */
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .notification-icon {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    font-size: 40px;
+    color: #4169E1;
+    cursor: pointer;
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 16px;
+  }
+  
+  .course-title {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .assignment-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .assignment-details {
+    margin-bottom: 22px;
+    color: #000000;
+    font-size: 22px;
+  }
+  
+  .assignment-details p {
+    margin: 0;
+  }
+  
+  .assignment-info, .assignment-resources {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #000000;
+  }
+  
+  .assignment-resources a {
+    color: #4169E1;
+    text-decoration: underline;
+  }
+  
+  .upload-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .choose-file-button {
+    background-color: #4169E1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .upload-section span {
+    margin-left: 10px;
+    color: #000000;
+  }
+  
+  .add-file-link-section {
+    margin-bottom: 20px;
+  }
+  
+  .add-file-link {
+    color: #4169E1;
+    text-decoration: underline;
+  }
+  
+  .assignment-buttons {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    gap: 10px;
+    margin-left: 850px; /* Move the buttons to the left */
+  }
+  
+  .button-cancel {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #ccc;
+    padding: 14px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .button-submit {
+    background-color: #4169E1;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .button-submit:disabled {
+    background-color: gray; /* Grey */
+    color: #ccc; /* Light grey text */
+    cursor: not-allowed;
+}

@@ -1,0 +1,39 @@
+/* src/client/src/css/CreateSectionModal.css */
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .modal-title {
+    color: #160946;
+    font-size: 24px;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .modal-footer {
+    border-top: 1px solid #e9ecef;
+    padding: 10px;
+  }
+  
+  .btn-primary {
+    background-color: #4169E1;
+    border-color: #4169E1;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+
+  .error-message {
+    color: red;
+  }
+  
+  .success-message {
+    color: green;
+  }
+  

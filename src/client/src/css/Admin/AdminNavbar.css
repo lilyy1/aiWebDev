@@ -1,0 +1,113 @@
+.admin-navbar {
+  background-color: #D7E1FF !important;
+  height: 80px !important;
+  width: 100px !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+  transition: width 0.3s ease !important;
+}
+
+.admin-navbar-body {
+  background-color: #D7E1FF !important;
+  width: 100px !important;
+  height: calc(100vh - 80px) !important;
+  position: fixed !important;
+  top: 80px !important;
+  left: 0 !important;
+  z-index: 998 !important;
+  transition: width 0.3s ease !important;
+}
+
+.menu-bars {
+  margin-left: 1rem;
+  font-size: 2rem;
+  background: none;
+  color: black;
+  cursor: pointer;
+}
+
+.menu-bars:hover {
+  color: black; 
+}
+
+.nav-menu {
+  background-color: #D7E1FF !important;
+  width: 280px !important;
+  height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  position: fixed !important;
+  top: 0px !important;
+  left: -100% !important;
+  transition: 450ms !important;
+  z-index: 999 !important;
+}
+
+.nav-menu.active {
+  left: 0 !important;
+  transition: 450ms !important;
+}
+
+.nav-menu-items {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.navbar-toggle {
+  background-color: #D7E1FF !important;
+  width: 100%;
+  height: 80px !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.nav-text {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  padding: 12px 10px !important;
+  list-style: none;
+  height: 70px !important;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: black !important;
+  font-size: 22px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 4px;
+  transition: background-color 250ms, color 250ms;
+}
+
+.nav-text a:hover {
+  background-color: #ffffff;
+  color: #4c6ef5 !important;
+}
+
+.nav-text a:hover * {
+  color: #4c6ef5 !important;
+}
+
+.admin-header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.admin-header h1 {
+  font-size: 24px;
+  color: black;
+}
+
+.admin-header h3 {
+  font-size: 16px;
+  color: black;
+}

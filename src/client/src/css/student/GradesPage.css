@@ -1,0 +1,61 @@
+/* src/css/GradesPage.css */
+.grades-container {
+  display: flex;
+  height: 100vh;
+
+}
+
+.grades-content {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.3s;
+  margin-left: 200px 
+}
+
+.sidebar-expanded {
+  margin-left: 200px;
+}
+
+.grades-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.grades-list-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.grades-list table {
+  width: 100%;
+}
+
+.grades-list tbody {
+ font-size:20px;
+ font-weight:500;
+ 
+}
+
+.grades-list thead {
+  font-size:20px;
+  font-weight:500;
+ }
+
+.grades-list th,
+.grades-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.grades-list th {
+  background-color: #4169E1;
+  color: white;
+  text-align: left;
+}
+
+
+

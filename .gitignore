@@ -1,0 +1,3 @@
+.DS_Store
+src/postgres/data
+node_modules

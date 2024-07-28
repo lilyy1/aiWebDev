@@ -1,0 +1,82 @@
+.sub-nav {
+  display: none;
+  position: absolute;
+  left: var(--nav-width);
+  top: 0;
+  height: 100%;
+  background-color: var(--white-color);
+  border-left: 1px solid #ddd;
+  z-index: 1000;
+  width: 17.5rem; /* Converted to rem */
+  padding: 3.75rem 0 0 0; /* Converted to rem */
+  transition: left 0.3s ease, display 0.3s ease;
+}
+
+.nav-text:hover .sub-nav,
+.sub-nav.sub-nav-active {
+  display: block;
+  transition-delay: 0.5s; /* Delay before showing sub-navbar */
+}
+
+.sub-nav .sub-nav-item {
+  cursor: pointer;
+  color: var(--text-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0.2rem; /* Converted to rem */
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.sub-nav .sub-nav-item.active,
+.sub-nav .sub-nav-item:hover {
+  background-color: var(--primary-color); /* Darkening effect with blue theme */
+  color: var(--white-color);
+}
+
+.sub-nav .sub-nav-item a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sub-nav .sub-nav-icon {
+  margin-right: 0.1rem; /* Converted to rem */
+  color: inherit;
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+.sub-nav .sub-nav-title {
+  color: inherit;
+  flex-grow: 1; /* Ensure the text takes up available space */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 0.1rem; /* Converted to rem */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  :root {
+    --sub-nav-width: 100vw; /* Sub-navbar takes full width on smaller screens */
+  }
+
+  .sub-nav {
+    left: 0;
+    width: 100%;
+    position: static;
+    padding: 0;
+  }
+
+  .nav-text:hover .sub-nav {
+    display: none;
+  }
+
+  .sub-nav .sub-nav-item {
+    padding: 0.9375rem 0.625rem; /* Converted to rem */
+  }
+}

@@ -1,0 +1,67 @@
+.single-announcement-container {
+    display: flex;
+  }
+  
+  .single-announcement-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .single-announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .announcement-detail {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .announcement-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .edit-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .announcement-date,
+  .announcement-content {
+    margin-bottom: 10px;
+  }
+  
+  .back-button-sannouncement {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 720px
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .sidebar-expanded .single-announcement-content {
+    margin-left: 250px; /* Adjust based on your sidebar width */
+  }
+  

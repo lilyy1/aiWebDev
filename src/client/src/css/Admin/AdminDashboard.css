@@ -1,0 +1,78 @@
+.admin-dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #E8F1F2;
+  flex-direction: column; /* Adjust to column for full height */
+}
+
+.admin-dashboard-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 100px;
+  transition: margin-left 450ms;
+  background-color: #E8F1F2;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column; /* Adjust to column for full height */
+}
+
+.admin-dashboard-content h2 {
+  font-size: 32px;
+  color: #160946;
+  margin-bottom: 20px;
+  margin-top: -30px;
+  margin-left: 90px;
+  display: flex;
+  justify-content: start;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: start;
+  margin-left: 17px;
+  margin-top: -25px;
+}
+
+.add-btn {
+  background-color: #5a67d8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 60px;
+  margin-left: 70px;
+}
+
+.import-btn:hover, .add-btn:hover {
+  background-color: #4c6ef5;
+}
+
+.user-table {
+  width: 90%; /* Adjust to fit within the screen */
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.user-table th, .user-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #5a67d8;
+  color: white;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.user-table tr:hover {
+  background-color: #ddd;
+}

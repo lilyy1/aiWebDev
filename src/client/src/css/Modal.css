@@ -1,0 +1,134 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: auto;
+  }
+  
+  .modal-content {
+    background: white !important;
+    border-radius: 8px;
+    padding: 20px;
+    width: 60%;
+    max-width: 800px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-content form label {
+    margin-bottom: 10px;
+  }
+  
+  .modal-content form label input,
+  .modal-content form label textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .submission-type {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .submission-type label {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .submission-type input {
+    margin-right: 10px;
+  }
+  
+  .file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .file-upload label {
+    margin-bottom: 10px;
+  }
+  
+  .file-upload input[type="file"] {
+    margin-top: 5px;
+    border: none; 
+    box-shadow: none; 
+  }
+  
+  .date-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .date-fields label {
+    width: 32%;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .modal-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal-buttons button[type="button"] {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .modal-buttons button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .modal-buttons button:hover[type="button"] {
+    background-color: #b3b3b3;
+  }
+  
+  .modal-buttons button:hover[type="submit"] {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .success-message {
+    color: green;
+  }
+  

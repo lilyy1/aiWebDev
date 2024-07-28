@@ -1,0 +1,118 @@
+.assignments-container {
+  background-color: white;
+  display: flex;
+}
+
+/* Main content area for assignments, with flexible growth and padding */
+.assignments-content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 500px; /* Align with initial sidebar + subnav width */
+  transition: margin-left 0.3s ease;
+}
+
+/* Header section for assignments, using flexbox for layout */
+.assignments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for the header title */
+.assignments-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Container for actions in the header, using flexbox for layout */
+.assignments-actions {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the assignment button in the header */
+.assignment-button {
+  background-color: #4169E1;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  margin-right: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Hover effect for the assignment button */
+.assignment-button:hover {
+  background-color: #4169E1;
+}
+
+/* Styling for the notification icon in the header */
+.notification-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Title for the assignments list section */
+.assignments-list-title {
+  background-color: #4169E1;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 800px; 
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Container for the list of assignments, with background and padding */
+.assignments-list {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 800px; /* Limit the width */
+  margin: left; /* Center the list */
+  border: 1px solid #ddd; /* Add border for outline */
+}
+
+/* Styling for each assignment item in the list */
+.assignment-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Hover effect for assignment items */
+.assignment-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Container for assignment details, using flexbox for layout */
+.assignment-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.assignment-actions {
+  margin-left: auto; /* Push it to the right */
+}
+
+/* Styling for the assignment name */
+.assignment-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Styling for the assignment due date */
+.assignment-due-date {
+  font-size: 14px;
+  color: #777;
+}

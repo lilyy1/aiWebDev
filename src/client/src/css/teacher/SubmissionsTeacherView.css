@@ -1,0 +1,147 @@
+.submissions-container {
+  display: flex;
+  background-color: #eaf0f4; /* Light blue background color */
+  height: 100vh;
+  flex-direction: column;
+}
+
+.submissions-content {
+  flex-grow: 1;
+  padding: 2%;
+  margin-left: 15vw; /* Adjust based on initial sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar-expanded .submissions-content {
+  margin-left: 25vw; /* Adjusted margin for expanded sidebar */
+}
+
+.content-wrapper {
+  padding: 2%;
+}
+
+.submissions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.search-sort-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+  align-items: center;
+}
+
+.search-sort-filter .form-control {
+  margin-left: 1%;
+  width: auto;
+}
+
+.submissions-list {
+  background-color: transparent; /* Transparent background */
+  overflow-x: auto;
+}
+
+.submissions-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2%; /* Space between table and the button */
+}
+
+.submissions-list th {
+  text-align: left;
+  padding: 1em; /* Adjusted padding for better spacing */
+  color: #333; /* Dark text color */
+  background-color: transparent; /* No background for headers */
+  border: none; /* Remove borders */
+  pointer-events: none; /* Disable hover effect on headers */
+}
+
+.submissions-list td {
+  padding: 1em; /* Adjusted padding for better spacing */
+  color: #333; /* Dark text color */
+  border: none; /* Remove borders */
+}
+
+.submissions-list tr.even-row td {
+  background-color: #f8f9fa; /* Light grey for even rows */
+}
+
+.submissions-list tr.odd-row td {
+  background-color: #ffffff; /* White background for odd rows */
+}
+
+.submissions-list tbody tr:hover td {
+  background-color: #0056b3; /* Dark blue for hover */
+  color: white;
+}
+
+.submissions-list .view-submission-button {
+  background-color: #4169E1;
+  color: white;
+  border: none;
+  padding: 0.5em 1em; /* Adjusted padding for better button size */
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submissions-list .view-submission-button:hover {
+  background-color: #0056b3;
+}
+
+.release-grades-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em; /* Adjusted padding for better button size */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; /* Larger font size */
+  display: block; /* Make the button block level to center it */
+  margin-left: auto; /* Align the button to the right */
+}
+
+.release-grades-button:hover {
+  background-color: #0056b3;
+}
+
+.release-grades-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.pending {
+  color: red;
+}
+
+.completed {
+  color: green;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .submissions-content {
+    margin-left: 0; /* Remove margin for small screens */
+    padding: 5%;
+  }
+
+  .search-sort-filter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-sort-filter .form-control {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .submissions-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
